@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://blyqiu3pmgs8m"]
+
+[ext_resource type="Texture2D" uid="uid://c6ph16yyvicsj" path="res://scn/props/branche/arbre0000.png" id="1_1uyn4"]
+[ext_resource type="Texture2D" uid="uid://6hdo8psf5o7x" path="res://scn/props/branche/arbre0001.png" id="2_erdw5"]
+[ext_resource type="Texture2D" uid="uid://b5kc7byia3jbj" path="res://scn/props/branche/arbre0002.png" id="3_cvfqs"]
+[ext_resource type="Texture2D" uid="uid://neib2ayey1mv" path="res://scn/props/branche/arbre0003.png" id="4_fhcsm"]
+[ext_resource type="Texture2D" uid="uid://cc8261qttj2ma" path="res://scn/props/branche/arbre0004.png" id="5_d5xds"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_echxb"]
+radius = 20.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5la54"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1uyn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_erdw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cvfqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fhcsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d5xds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="obstacle" type="StaticBody2D"]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_echxb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -87)
+sprite_frames = SubResource("SpriteFrames_5la54")
+autoplay = "default"
+frame_progress = 0.489272

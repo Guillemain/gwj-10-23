@@ -1,0 +1,114 @@
+[gd_scene load_steps=26 format=3 uid="uid://bu31eh12y4k5r"]
+
+[ext_resource type="PackedScene" uid="uid://b50gskoh4uth1" path="res://scn/player/Rig2D.tscn" id="1_l5uko"]
+[ext_resource type="Texture2D" uid="uid://qu3ax0dxj2vi" path="res://scn/player/spritesklt/frame0018.png" id="2_egyry"]
+[ext_resource type="Texture2D" uid="uid://c4aav6cil2wnb" path="res://scn/player/spritesklt/frame0015.png" id="3_63sga"]
+[ext_resource type="Texture2D" uid="uid://chiltm1b1i2mf" path="res://scn/player/spritesklt/frame0016.png" id="4_c8s36"]
+[ext_resource type="Texture2D" uid="uid://cy37cv6x31ord" path="res://scn/player/spritesklt/frame0017.png" id="5_recup"]
+[ext_resource type="Texture2D" uid="uid://fpkt8nds34nr" path="res://scn/player/spritesklt/frame0011.png" id="6_po7ua"]
+[ext_resource type="Texture2D" uid="uid://ba8164sfvpnfl" path="res://scn/player/spritesklt/frame0008.png" id="7_qawq3"]
+[ext_resource type="Texture2D" uid="uid://chdennatuyt28" path="res://scn/player/spritesklt/frame0009.png" id="8_cd1cv"]
+[ext_resource type="Texture2D" uid="uid://cp8nnosybn8mw" path="res://scn/player/spritesklt/frame0010.png" id="9_h4qo5"]
+[ext_resource type="Texture2D" uid="uid://dcumq7ajf6adm" path="res://scn/player/spritesklt/frame0013.png" id="10_gl1va"]
+[ext_resource type="Texture2D" uid="uid://cqm7krk6v7c2m" path="res://scn/player/spritesklt/frame0012.png" id="11_7mccx"]
+[ext_resource type="Texture2D" uid="uid://bthnlfvjbw3c5" path="res://scn/player/spritesklt/frame0014.png" id="12_3g5n0"]
+[ext_resource type="Texture2D" uid="uid://cq6g1sbeoixej" path="res://scn/player/spritesklt/frame0019.png" id="13_jv23h"]
+[ext_resource type="Texture2D" uid="uid://tua00okk18fg" path="res://scn/player/spritesklt/frame0020.png" id="14_14l76"]
+[ext_resource type="Texture2D" uid="uid://6jnydxwx27hb" path="res://scn/player/spritesklt/frame0021.png" id="15_cpm4k"]
+[ext_resource type="Texture2D" uid="uid://bb5oflwtbd4p1" path="res://scn/player/spritesklt/body0003.png" id="16_qn85x"]
+[ext_resource type="Texture2D" uid="uid://nnfd051anw0n" path="res://scn/player/spritesklt/body0001.png" id="17_0i33j"]
+[ext_resource type="Texture2D" uid="uid://bdfdwbhudu72g" path="res://scn/player/spritesklt/body0002.png" id="18_f2oyj"]
+[ext_resource type="Texture2D" uid="uid://ym64i2womwg1" path="res://scn/player/spritesklt/head0002.png" id="19_uixhq"]
+[ext_resource type="Texture2D" uid="uid://c3st24qj5hghb" path="res://scn/player/spritesklt/head0001.png" id="20_6lm8w"]
+[ext_resource type="Texture2D" uid="uid://485aotpl7dji" path="res://scn/player/spritesklt/head0003.png" id="21_54tli"]
+[ext_resource type="Texture2D" uid="uid://gd10rcdbd5ka" path="res://scn/player/spritesklt/other0004.png" id="22_lygo0"]
+[ext_resource type="Texture2D" uid="uid://b50rvorlk2w8w" path="res://scn/player/spritesklt/other0001.png" id="23_m8rr4"]
+[ext_resource type="Texture2D" uid="uid://ltspc7s48p6k" path="res://scn/player/spritesklt/other0002.png" id="24_h7mci"]
+[ext_resource type="Texture2D" uid="uid://tfk17q1kmig" path="res://scn/player/spritesklt/other0003.png" id="25_76sdu"]
+
+[node name="Rig2D" instance=ExtResource("1_l5uko")]
+
+[node name="Renderer" parent="." index="0"]
+scale = Vector2(0.266684, 0.262283)
+
+[node name="KeyFrames" parent="Renderer" index="0"]
+visible = false
+
+[node name="Spell" parent="Renderer/KeyFrames" index="0"]
+position = Vector2(-30.1606, -131.26)
+scale = Vector2(0.956057, 1.11973)
+texture = ExtResource("2_egyry")
+img_a = ExtResource("3_63sga")
+img_b = ExtResource("4_c8s36")
+img_c = ExtResource("5_recup")
+
+[node name="arm" parent="Renderer/KeyFrames/Spell" index="0"]
+visible = false
+
+[node name="RecolteA" parent="Renderer/KeyFrames" index="1"]
+texture = ExtResource("6_po7ua")
+img_a = ExtResource("7_qawq3")
+img_b = ExtResource("8_cd1cv")
+img_c = ExtResource("9_h4qo5")
+
+[node name="RecolteB" parent="Renderer/KeyFrames" index="2"]
+texture = ExtResource("10_gl1va")
+img_a = ExtResource("11_7mccx")
+img_b = ExtResource("10_gl1va")
+img_c = ExtResource("12_3g5n0")
+
+[node name="Gotveg" parent="Renderer/KeyFrames" index="3"]
+texture = ExtResource("14_14l76")
+img_a = ExtResource("13_jv23h")
+img_b = ExtResource("14_14l76")
+img_c = ExtResource("15_cpm4k")
+
+[node name="Puppet" parent="Renderer" index="1"]
+visible = true
+
+[node name="Corps" parent="Renderer/Puppet" index="0"]
+texture = ExtResource("16_qn85x")
+img_a = ExtResource("17_0i33j")
+img_b = ExtResource("18_f2oyj")
+img_c = ExtResource("16_qn85x")
+
+[node name="Chapeau" parent="Renderer/Puppet/Corps" index="0"]
+visible = false
+
+[node name="Chapeau_arriere" parent="Renderer/Puppet/Corps/Chapeau" index="0"]
+visible = false
+
+[node name="Lunette" parent="Renderer/Puppet/Corps" index="1"]
+visible = false
+
+[node name="Tete" parent="Renderer/Puppet/Corps" index="2"]
+texture = ExtResource("19_uixhq")
+img_a = ExtResource("20_6lm8w")
+img_b = ExtResource("19_uixhq")
+img_c = ExtResource("21_54tli")
+
+[node name="L_arm" parent="Renderer/Puppet/Corps" index="3"]
+texture = ExtResource("22_lygo0")
+img_a = ExtResource("23_m8rr4")
+img_b = ExtResource("24_h7mci")
+img_c = ExtResource("25_76sdu")
+
+[node name="R_arm" parent="Renderer/Puppet/Corps" index="4"]
+texture = ExtResource("22_lygo0")
+polygon = PackedVector2Array(48, 207, 43, 335, 134, 350, 248, 274, 235, 194)
+uv = PackedVector2Array(48, 207, 43, 335, 134, 350, 248, 274, 235, 194)
+img_a = ExtResource("23_m8rr4")
+img_b = ExtResource("24_h7mci")
+img_c = ExtResource("25_76sdu")
+
+[node name="R_leg" parent="Renderer/Puppet" index="1"]
+texture = ExtResource("25_76sdu")
+img_a = ExtResource("23_m8rr4")
+img_b = ExtResource("24_h7mci")
+img_c = ExtResource("25_76sdu")
+
+[node name="L_leg" parent="Renderer/Puppet" index="2"]
+texture = ExtResource("25_76sdu")
+img_a = ExtResource("23_m8rr4")
+img_b = ExtResource("24_h7mci")
+img_c = ExtResource("25_76sdu")

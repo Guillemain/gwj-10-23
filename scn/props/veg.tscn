@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://8pldmolc0nb2"]
+
+[ext_resource type="Script" path="res://scn/props/veg.gd" id="1_gtg25"]
+[ext_resource type="PackedScene" uid="uid://c2p78qg2tt00p" path="res://scn/props/veg_sprite/carotte.tscn" id="2_fkwn3"]
+[ext_resource type="PackedScene" uid="uid://cq5btkjyrb20e" path="res://scn/props/veg_sprite/champi.tscn" id="3_o7okt"]
+[ext_resource type="PackedScene" uid="uid://ctaieenf15t3u" path="res://scn/props/veg_sprite/champibis.tscn" id="4_wau3a"]
+[ext_resource type="PackedScene" uid="uid://bxqfuks2qdng7" path="res://scn/props/veg_sprite/oignon.tscn" id="5_xrq4b"]
+[ext_resource type="PackedScene" uid="uid://bcjoqa2xq182i" path="res://scn/props/veg_sprite/radis.tscn" id="6_3bkc0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tor4j"]
+
+[node name="veg" type="Area2D" groups=["veg"]]
+z_index = 5
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_gtg25")
+action_requiered = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_tor4j")
+debug_color = Color(0.321569, 0.745098, 0.454902, 0.419608)
+
+[node name="render" type="Polygon2D" parent="."]
+clip_children = 1
+position = Vector2(1, 58)
+scale = Vector2(0.725731, 0.725731)
+offset = Vector2(-1, -40)
+polygon = PackedVector2Array(-27, -137, 35, -137, 30, -1, 14, 5, 6, 10, -3, 9, -10, 8, -16, 3, -27, -3)
+
+[node name="carotte" parent="render" instance=ExtResource("2_fkwn3")]
+visible = false
+position = Vector2(-1, -30)
+
+[node name="champi" parent="render" instance=ExtResource("3_o7okt")]
+visible = false
+position = Vector2(2, -37)
+
+[node name="champi_bis" parent="render" instance=ExtResource("4_wau3a")]
+visible = false
+position = Vector2(0, -50)
+
+[node name="oignon" parent="render" instance=ExtResource("5_xrq4b")]
+visible = false
+position = Vector2(-4, -26)
+
+[node name="radis" parent="render" instance=ExtResource("6_3bkc0")]
+visible = false
+position = Vector2(-1, -24)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(-27, -6)
+color = Color(0.402344, 0.476563, 0.363281, 1)
+offset = Vector2(-122, -8)
+polygon = PackedVector2Array(174, 14, 129, 14, 137, 84, 162, 87)

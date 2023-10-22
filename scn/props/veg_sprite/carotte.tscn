@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2p78qg2tt00p"]
+
+[ext_resource type="Texture2D" uid="uid://dubxfknyxinx2" path="res://scn/props/frames/props0002.png" id="1_dek13"]
+[ext_resource type="Script" path="res://scn/props/FakeFixPoly.gd" id="2_o736g"]
+[ext_resource type="Texture2D" uid="uid://doyxgjpq7470p" path="res://scn/props/frames/props0000.png" id="3_a74jd"]
+[ext_resource type="Texture2D" uid="uid://c6r1v260hohs7" path="res://scn/props/frames/props0001.png" id="4_0i18n"]
+
+[node name="carotte" type="Node2D"]
+
+[node name="FakeFixPoly" type="Polygon2D" parent="."]
+position = Vector2(0, 1)
+offset = Vector2(-61, -89)
+texture = ExtResource("1_dek13")
+polygon = PackedVector2Array(34, 6, 87, 3, 87, 163, 39, 162)
+uv = PackedVector2Array(34, 6, 87, 3, 87, 163, 39, 162)
+script = ExtResource("2_o736g")
+img_a = ExtResource("3_a74jd")
+img_b = ExtResource("4_0i18n")
+img_c = ExtResource("1_dek13")

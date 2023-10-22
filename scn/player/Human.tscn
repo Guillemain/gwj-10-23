@@ -1,0 +1,152 @@
+[gd_scene load_steps=26 format=3 uid="uid://wbmcwypajs6t"]
+
+[ext_resource type="PackedScene" uid="uid://g1lu8kmfx76g" path="res://scn/player/player.tscn" id="1_6rak6"]
+[ext_resource type="PackedScene" uid="uid://b50gskoh4uth1" path="res://scn/player/Rig2D.tscn" id="2_8yc87"]
+[ext_resource type="Texture2D" uid="uid://bp0xcs84maaeo" path="res://scn/props/FX/push/pushFX0005.png" id="7_2k2sr"]
+[ext_resource type="Texture2D" uid="uid://crugo5x1bxp6" path="res://scn/props/FX/push/pushFX0006.png" id="8_k56ie"]
+[ext_resource type="Texture2D" uid="uid://chxc8ai2i6c0q" path="res://scn/props/FX/push/pushFX0007.png" id="9_5omqf"]
+[ext_resource type="Texture2D" uid="uid://d05078k8068ca" path="res://scn/props/FX/push/pushFX0008.png" id="10_wwen4"]
+[ext_resource type="Texture2D" uid="uid://b26xuhj1ixhhr" path="res://scn/props/deadleave.png" id="11_moc8u"]
+[ext_resource type="Texture2D" uid="uid://p4tacjn6wk0j" path="res://scn/props/FX/push/pushFX0009.png" id="11_qcv1l"]
+[ext_resource type="Script" path="res://Audio/audio_effect.gd" id="11_s2eal"]
+[ext_resource type="AudioStream" uid="uid://dfx371yoyk4t2" path="res://Audio/bruitGWJ23_sort_r1_session.wav" id="12_m71ts"]
+[ext_resource type="Texture2D" uid="uid://de10ykc4kns6p" path="res://scn/props/FX/push/pushFX0010.png" id="12_rmax3"]
+[ext_resource type="AudioStream" uid="uid://01tuv83pcxsg" path="res://Audio/bruitGWJ23_sort_r2_session.wav" id="13_bi0hf"]
+[ext_resource type="Texture2D" uid="uid://cvcxhbuvoqar6" path="res://scn/props/FX/push/pushFX0011.png" id="13_kgn81"]
+[ext_resource type="AudioStream" uid="uid://bbqaifimc7irp" path="res://Audio/bruitGWJ23_sort_r3_session.wav" id="14_5qy3b"]
+[ext_resource type="Texture2D" uid="uid://dyvyk1yjlm6hg" path="res://scn/props/FX/push/pushFX0012.png" id="14_66au1"]
+[ext_resource type="AudioStream" uid="uid://b2nvq75uhe7cf" path="res://Audio/bruitGWJ23_sort_r4_session.wav" id="15_imagg"]
+[ext_resource type="AudioStream" uid="uid://c16yrbk2ld5cm" path="res://Audio/bruitGWJ23_sort_r5_session.wav" id="16_wbucj"]
+[ext_resource type="AudioStream" uid="uid://qu88cwimdh4f" path="res://Audio/bruitGWJ23_human_loopalk_session.wav" id="18_iesbe"]
+[ext_resource type="AudioStream" uid="uid://dkoyro4thvp1d" path="res://scn/havest_h.wav" id="19_x8a5c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmbmt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2k2sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k56ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5omqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wwen4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qcv1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rmax3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kgn81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_66au1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_343a4"]
+offsets = PackedFloat32Array(0, 0.519481, 1)
+colors = PackedColorArray(0.901961, 0.65098, 0.372549, 1, 0.871677, 0.454987, 0.317384, 1, 0.676116, 0.541638, 0.320508, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fho3d"]
+gradient = SubResource("Gradient_343a4")
+
+[sub_resource type="Gradient" id="Gradient_3dror"]
+offsets = PackedFloat32Array(0.00865801, 0.463203, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nnw7j"]
+gradient = SubResource("Gradient_3dror")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_o1fek"]
+emission_shape = 3
+emission_box_extents = Vector3(50, 50, 50)
+particle_flag_disable_z = true
+spread = 24.87
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 300.69
+initial_velocity_max = 447.56
+orbit_velocity_min = -0.1
+orbit_velocity_max = 0.1
+linear_accel_min = -100.0
+linear_accel_max = -78.45
+radial_accel_min = 8.39
+radial_accel_max = 8.39
+angle_min = -382.7
+angle_max = 251.7
+scale_min = 0.3
+scale_max = 0.5
+color_ramp = SubResource("GradientTexture1D_nnw7j")
+color_initial_ramp = SubResource("GradientTexture1D_fho3d")
+
+[node name="player" groups=["human"] instance=ExtResource("1_6rak6")]
+collision_layer = 4097
+collision_mask = 4097
+
+[node name="SpellPunch" parent="LookAt" index="0"]
+force = 1800.0
+
+[node name="Collider" parent="LookAt/SpellPunch" index="0"]
+visible = false
+
+[node name="PushAnimA" type="AnimatedSprite2D" parent="LookAt/SpellPunch" index="1"]
+z_index = 5
+position = Vector2(129, 0)
+scale = Vector2(1.09104, 0.724)
+sprite_frames = SubResource("SpriteFrames_qmbmt")
+frame = 7
+frame_progress = 1.0
+offset = Vector2(139, 3)
+
+[node name="DeadLeaves" type="GPUParticles2D" parent="LookAt/SpellPunch/PushAnimA" index="0"]
+position = Vector2(6.4159, -1.27853)
+scale = Vector2(0.916557, 1.27853)
+emitting = false
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_o1fek")
+texture = ExtResource("11_moc8u")
+one_shot = true
+speed_scale = 1.5
+explosiveness = 1.0
+
+[node name="spell" type="AudioStreamPlayer" parent="LookAt/SpellPunch/PushAnimA" index="1"]
+volume_db = 15.273
+bus = &"SFX"
+script = ExtResource("11_s2eal")
+audio_clips = Array[AudioStream]([ExtResource("12_m71ts"), ExtResource("13_bi0hf"), ExtResource("14_5qy3b"), ExtResource("15_imagg"), ExtResource("16_wbucj")])
+pitch_distortion = 0.1
+
+[node name="Rig2D" parent="." index="5" node_paths=PackedStringArray("state", "looker") instance=ExtResource("2_8yc87")]
+state = NodePath("../PlayerState")
+looker = NodePath("../LookAt")
+
+[node name="HaverstEffect" parent="." index="6"]
+is_human = true
+
+[node name="Walk" type="AudioStreamPlayer" parent="." index="7"]
+volume_db = -9.074
+bus = &"SFX"
+script = ExtResource("11_s2eal")
+audio_clips = Array[AudioStream]([ExtResource("18_iesbe")])
+
+[node name="Harvest" type="AudioStreamPlayer" parent="." index="8"]
+volume_db = -1.395
+mix_target = 2
+max_polyphony = 4
+bus = &"SFX"
+script = ExtResource("11_s2eal")
+audio_clips = Array[AudioStream]([ExtResource("19_x8a5c")])
+pitch_distortion = 0.2
+
+[connection signal="start_harvest" from="PlayerState" to="Harvest" method="play_sound"]
+[connection signal="start_moving" from="PlayerState" to="Walk" method="play_sound"]
+[connection signal="start_spells" from="PlayerState" to="LookAt/SpellPunch/PushAnimA/spell" method="play_sound"]
+[connection signal="stop_moving" from="PlayerState" to="Walk" method="stop_play"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://kk6aflro6bwn"]
+
+[ext_resource type="PackedScene" uid="uid://cjf2msfadd8rr" path="res://scn/props/obstacle2.tscn" id="1_glgin"]
+[ext_resource type="Texture2D" uid="uid://cf4pf0i45kh5r" path="res://scn/props/maison/pir.png0000.png" id="2_op7b6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqogw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_op7b6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="obstacle" instance=ExtResource("1_glgin")]
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(2, -10)
+scale = Vector2(0.764943, 0.803587)
+sprite_frames = SubResource("SpriteFrames_gqogw")
+frame = 0
+frame_progress = 0.0

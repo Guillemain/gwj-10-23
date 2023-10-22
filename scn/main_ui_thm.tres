@@ -1,0 +1,26 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://b8307px7ohiw7"]
+
+[ext_resource type="FontFile" uid="uid://pthve32x87h7" path="res://scn/Om Botak.otf" id="1_8ffoh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jim5"]
+bg_color = Color(0.4, 0.305882, 0.258824, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.572549, 0.47451, 0.356863, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0, 0, 0.454902)
+shadow_size = 4
+shadow_offset = Vector2(2, 2)
+
+[resource]
+default_font = ExtResource("1_8ffoh")
+Label/colors/font_outline_color = Color(0.304688, 0.269531, 0.242188, 1)
+Label/constants/outline_size = 6
+Label/font_sizes/font_size = 22
+Label/fonts/font = ExtResource("1_8ffoh")
+Panel/styles/panel = SubResource("StyleBoxFlat_2jim5")

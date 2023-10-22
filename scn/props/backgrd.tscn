@@ -1,0 +1,370 @@
+[gd_scene load_steps=2 format=3 uid="uid://byxtqxghvou3g"]
+
+[ext_resource type="Texture2D" uid="uid://s8wdh3bqhokd" path="res://scn/lvl/deco/decoA.png" id="1_2jyf5"]
+
+[node name="Deco" type="Node2D"]
+position = Vector2(-580, -322)
+
+[node name="Feuille" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1365, 629)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille4" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1369, 598)
+offset = Vector2(-568, -140)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(491, 130, 610, 104, 619, 140, 490, 171)
+uv = PackedVector2Array(491, 130, 610, 104, 619, 140, 490, 171)
+
+[node name="Feuille5" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(892, 928)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille6" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(614, 501)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille7" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1740, 769)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille24" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1757, 378)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille25" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1799, 576)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille26" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1441, 342)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille8" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1283, 383)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille30" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(903, 379)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille31" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1091, 705)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille32" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1091, 705)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille9" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1694, 884)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille23" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(612, 749)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille10" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(661, 874)
+offset = Vector2(-336, -80)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+uv = PackedVector2Array(291, 18, 244, 33, 251, 145, 335, 154, 446, 126, 447, 24, 394, 3)
+
+[node name="Feuille2" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(893, 538)
+offset = Vector2(-539, -72)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(476, 12, 460, 70, 500, 113, 599, 105, 601, 12)
+uv = PackedVector2Array(476, 12, 460, 70, 500, 113, 599, 105, 601, 12)
+
+[node name="Feuille3" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1213, 741)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille20" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1213, 741)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille14" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(819, 864)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille15" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(678, 616)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille16" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(855, 659)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille21" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1095, 873)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille22" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1458, 852)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille39" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1259, 645)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille40" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1404, 483)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille41" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1638, 489)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille42" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1614, 371)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille17" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1241, 526)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille33" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1023, 481)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille34" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1071, 496)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille35" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1349, 907)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille36" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1486, 668)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille43" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1359, 737)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille44" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1581, 753)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille45" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(977, 669)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille37" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(935, 600)
+offset = Vector2(-519, -57)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+uv = PackedVector2Array(450, 21, 590, 12, 599, 108, 460, 120)
+
+[node name="Feuille18" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1575, 563)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille19" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1068, 757)
+offset = Vector2(-821, -46)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+uv = PackedVector2Array(718, 101, 720, 4, 886, 1, 897, 109)
+
+[node name="Feuille11" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(843, 797)
+offset = Vector2(-669, -47)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(612, 9, 699, 7, 702, 56, 600, 60)
+uv = PackedVector2Array(612, 9, 699, 7, 702, 56, 600, 60)
+
+[node name="Feuille27" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1619, 464)
+offset = Vector2(-669, -47)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(612, 9, 699, 7, 702, 56, 600, 60)
+uv = PackedVector2Array(612, 9, 699, 7, 702, 56, 600, 60)
+
+[node name="Feuille28" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(753, 587)
+offset = Vector2(-24, -91)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+uv = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+
+[node name="Feuille29" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(937, 814)
+offset = Vector2(-24, -91)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+uv = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+
+[node name="Feuille38" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1460, 507)
+offset = Vector2(-24, -91)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+uv = PackedVector2Array(2, 12, 83, 24, 83, 112, 2, 102)
+
+[node name="Feuille12" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1115, 609)
+offset = Vector2(-655, -84)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(614, 72, 618, 113, 697, 116, 710, 73, 668, 48)
+uv = PackedVector2Array(614, 72, 618, 113, 697, 116, 710, 73, 668, 48)
+
+[node name="Feuille13" type="Polygon2D" parent="."]
+z_index = -3
+position = Vector2(1273, 738)
+offset = Vector2(-655, -84)
+texture = ExtResource("1_2jyf5")
+polygon = PackedVector2Array(614, 72, 618, 113, 697, 116, 710, 73, 668, 48)
+uv = PackedVector2Array(614, 72, 618, 113, 697, 116, 710, 73, 668, 48)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.529412, 0.305882, 0.188235, 0.188235)
+polygon = PackedVector2Array(509, 244, 2110, 276, 2027, 1019, 491, 1014)

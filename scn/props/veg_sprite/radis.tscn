@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcjoqa2xq182i"]
+
+[ext_resource type="PackedScene" uid="uid://bxqfuks2qdng7" path="res://scn/props/veg_sprite/oignon.tscn" id="1_4omyc"]
+
+[node name="carotte" instance=ExtResource("1_4omyc")]
+
+[node name="FakeFixPoly" parent="." index="0"]
+position = Vector2(0, -21)
+uv = PackedVector2Array(154, 5, 207, 2, 207, 162, 159, 161)

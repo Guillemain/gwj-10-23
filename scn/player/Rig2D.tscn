@@ -1,0 +1,1201 @@
+[gd_scene load_steps=43 format=3 uid="uid://b50gskoh4uth1"]
+
+[ext_resource type="Script" path="res://scn/player/Rig2D.gd" id="1_6d24m"]
+[ext_resource type="Texture2D" uid="uid://lyvqgy6svqu1" path="res://scn/player/sprite/corp0003.png" id="1_ben1y"]
+[ext_resource type="Script" path="res://scn/props/FakeFixPoly.gd" id="1_wdgqh"]
+[ext_resource type="Texture2D" uid="uid://c6s6m4hxdl3fj" path="res://scn/player/sprite/keyframe/spell2.png0005.png" id="2_0s16f"]
+[ext_resource type="Texture2D" uid="uid://eakvr1wfmdqx" path="res://scn/player/sprite/chap0001.png" id="2_dkmgn"]
+[ext_resource type="Texture2D" uid="uid://cgpb62kgtb76c" path="res://scn/player/sprite/chap0002.png" id="3_8rbn8"]
+[ext_resource type="Texture2D" uid="uid://bjmojjsojj8be" path="res://scn/player/sprite/corp0001.png" id="3_o3nbw"]
+[ext_resource type="Texture2D" uid="uid://bbdkt5tk3gmt6" path="res://scn/player/sprite/chap0003.png" id="4_20stl"]
+[ext_resource type="Texture2D" uid="uid://dlgqcnetw5gyl" path="res://scn/player/sprite/corp0002.png" id="4_fd0la"]
+[ext_resource type="Texture2D" uid="uid://dofmjb027wmi" path="res://scn/player/sprite/keyframe/spell2.png0006.png" id="4_u04lm"]
+[ext_resource type="Texture2D" uid="uid://kf7q3p1jgcsm" path="res://scn/player/sprite/keyframe/spell2.png0007.png" id="5_6gilv"]
+[ext_resource type="Texture2D" uid="uid://b5koo66w3851a" path="res://scn/player/sprite/other0004.png" id="5_xxu88"]
+[ext_resource type="Texture2D" uid="uid://vm7c1a5jo3rt" path="res://scn/player/sprite/other0001.png" id="6_gqpqq"]
+[ext_resource type="Texture2D" uid="uid://5bg22eoy7san" path="res://scn/player/sprite/keyframe/arm0005.png" id="6_wmxfu"]
+[ext_resource type="Texture2D" uid="uid://byoubve7d5sb" path="res://scn/player/sprite/keyframe/recolte0011.png" id="7_ge13x"]
+[ext_resource type="Texture2D" uid="uid://cj0hclkx7y5k4" path="res://scn/player/sprite/keyframe/arm0006.png" id="7_hlnel"]
+[ext_resource type="Texture2D" uid="uid://c0ryv1w700d0o" path="res://scn/player/sprite/other0002.png" id="7_sgpjr"]
+[ext_resource type="Texture2D" uid="uid://go636b3868ya" path="res://scn/player/sprite/keyframe/recolte0008.png" id="8_626ag"]
+[ext_resource type="Texture2D" uid="uid://dbxjphsyycveg" path="res://scn/player/sprite/keyframe/arm0007.png" id="8_e5j65"]
+[ext_resource type="Texture2D" uid="uid://b1padm7kbtl5b" path="res://scn/player/sprite/binocle0004.png" id="8_slr2x"]
+[ext_resource type="Texture2D" uid="uid://du7cn7rrju8xo" path="res://scn/player/sprite/binocle0001.png" id="9_km182"]
+[ext_resource type="Texture2D" uid="uid://djbswdyu26v52" path="res://scn/player/sprite/keyframe/recolte0009.png" id="9_scgrn"]
+[ext_resource type="Texture2D" uid="uid://dt86aj533tj27" path="res://scn/player/sprite/keyframe/recolte0010.png" id="10_mj5vh"]
+[ext_resource type="Texture2D" uid="uid://dyx1810t5n6hr" path="res://scn/player/sprite/binocle0002.png" id="10_w7jqc"]
+[ext_resource type="Texture2D" uid="uid://db3fy76gvjlky" path="res://scn/player/sprite/tete0003.png" id="11_0ewg8"]
+[ext_resource type="Texture2D" uid="uid://60vie1v0m6hq" path="res://scn/player/sprite/keyframe/recolte0014.png" id="11_vwkoj"]
+[ext_resource type="Texture2D" uid="uid://k68ow0g2iuk8" path="res://scn/player/sprite/tete0001.png" id="12_54tuy"]
+[ext_resource type="Texture2D" uid="uid://bggderjrltbja" path="res://scn/player/sprite/keyframe/recolte0012.png" id="12_rcnac"]
+[ext_resource type="Texture2D" uid="uid://dvf635m80b783" path="res://scn/player/sprite/keyframe/recolte0013.png" id="13_q8lvh"]
+[ext_resource type="Texture2D" uid="uid://cbo85xam6bb6u" path="res://scn/player/sprite/tete0002.png" id="13_wgiya"]
+[ext_resource type="Texture2D" uid="uid://cdrt6gfi7370k" path="res://scn/player/sprite/keyframe/recolte0022.png" id="14_0ord4"]
+[ext_resource type="Texture2D" uid="uid://bh646lob1jw7t" path="res://scn/player/sprite/keyframe/recolte0019.png" id="15_rmxhi"]
+[ext_resource type="Texture2D" uid="uid://4v6ptu5iretp" path="res://scn/player/sprite/keyframe/recolte0020.png" id="16_rdugn"]
+[ext_resource type="Texture2D" uid="uid://d4inc63f6g828" path="res://scn/player/sprite/other0003.png" id="17_2rvtf"]
+[ext_resource type="Texture2D" uid="uid://wd5h5ne100er" path="res://scn/player/sprite/keyframe/recolte0021.png" id="17_n5glp"]
+[ext_resource type="PackedScene" uid="uid://cy7uef5it6u50" path="res://scn/props/FX/FX_2D.tscn" id="36_xmfdr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v5qko"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_wmxfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hlnel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e5j65")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_vh0qe"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Renderer/Puppet/Corps:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-4.03674, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Renderer/Puppet/Corps:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-182.653, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Renderer/Puppet/Corps:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Renderer/Puppet/Corps/Chapeau:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-110, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Renderer/Puppet/Corps/Chapeau:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Renderer/Puppet/Corps/Lunette:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Renderer/Puppet/Corps/Lunette:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-84, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Renderer/Puppet/Corps/Lunette:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Renderer/Puppet/Corps/Tete:position:x")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Renderer/Puppet/Corps/Tete:position:y")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-54, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Renderer/Puppet/Corps/Tete:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Renderer/Puppet/Corps/L_arm:position:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(6, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Renderer/Puppet/Corps/L_arm:position:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-34, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Renderer/Puppet/Corps/L_arm:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Renderer/Puppet/Corps/R_arm:position:x")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-50, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Renderer/Puppet/Corps/R_arm:position:y")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-10, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Renderer/Puppet/Corps/R_arm:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Renderer/Puppet/R_leg:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-67.0368, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Renderer/Puppet/R_leg:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-100.653, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Renderer/Puppet/R_leg:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/23/type = "bezier"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Renderer/Puppet/L_leg:position:x")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(7.96326, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/24/type = "bezier"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Renderer/Puppet/L_leg:position:y")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-101.653, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/25/type = "bezier"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Renderer/Puppet/L_leg:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Renderer/Puppet/L_leg:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.80306, -105.914)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("Renderer/Puppet/Corps:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-6.81426, -196.363)]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("Renderer/Puppet/Corps/Chapeau:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.30866, -133.568)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5, 15)]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("Renderer/Puppet/Corps/Lunette:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1.25989, -84.3465)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("Renderer/Puppet/Corps/Tete:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-6.25987, -54.3465)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("Renderer/Puppet/Corps/L_arm:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-15.7035, -5.12523)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("Renderer/Puppet/Corps/R_arm:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-50, -10)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("Renderer/Puppet/R_leg:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-50.521, -108.982)]
+}
+
+[sub_resource type="Animation" id="Animation_xglro"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Renderer/Puppet/Corps:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-6.81426, -0.25, 0, 0.25, 0, -6.81426, -0.25, 0, 0.25, 0, -6.81426, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Renderer/Puppet/Corps:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-187.778, -0.25, 0, 0.25, 0, -170.924, -0.1, -1.3513, 0.1, -0.36853, -187.778, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.4, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Renderer/Puppet/Corps:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Renderer/Puppet/Corps/Chapeau:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-110, -0.25, 0, 0.25, 0, -89.1493, -0.25, 0, 0.25, 0, -110, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Renderer/Puppet/Corps/Chapeau:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-5, -0.25, 0, 0.25, 0, -5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(15, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Renderer/Puppet/Corps/Lunette:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 4.76837e-07, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Renderer/Puppet/Corps/Lunette:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-84, -0.25, 0, 0.25, 0, -66.4899, -0.25, 0, 0.25, 0, -84, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Renderer/Puppet/Corps/Lunette:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Renderer/Puppet/Corps/Tete:position:x")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-5, -0.25, 0, 0.25, 0, -8.61732, -0.25, 0, 0.25, 0, -5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Renderer/Puppet/Corps/Tete:position:y")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-54, -0.25, 0, 0.25, 0, -44.5116, -0.25, 0, 0.25, 0, -54, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Renderer/Puppet/Corps/Tete:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.0711554, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Renderer/Puppet/Corps/L_arm:position:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-15.7035, -0.25, 0, 0.25, 0, -15.7035, -0.25, 0, 0.25, 0, -15.7035, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Renderer/Puppet/Corps/L_arm:position:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-5.12523, -0.25, 0, 0.25, 0, -5.12523, -0.25, 0, 0.25, 0, -5.12523, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Renderer/Puppet/Corps/L_arm:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.285448, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Renderer/Puppet/Corps/R_arm:position:x")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-50, -0.25, 0, 0.25, 0, -50, -0.25, 0, 0.25, 0, -50, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Renderer/Puppet/Corps/R_arm:position:y")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-10, -0.25, 0, 0.25, 0, -10, -0.25, 0, 0.25, 0, -10, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Renderer/Puppet/Corps/R_arm:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.255459, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.6, 1)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Renderer/Puppet/R_leg:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-67.0368, -0.25, 0, 0.25, 0, -67.0368, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Renderer/Puppet/R_leg:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-100.653, -0.25, 0, 0.25, 0, -100.653, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Renderer/Puppet/R_leg:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/23/type = "bezier"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Renderer/Puppet/L_leg:position:x")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(7.96326, -0.25, 0, 0.25, 0, 7.96326, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/24/type = "bezier"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Renderer/Puppet/L_leg:position:y")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-101.653, -0.25, 0, 0.25, 0, -101.653, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/25/type = "bezier"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Renderer/Puppet/L_leg:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="Animation" id="Animation_ew6sx"]
+resource_name = "run"
+length = 0.4
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Renderer/Puppet/L_leg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(31.9637, -123.148), Vector2(6.90689, -95.776), Vector2(-6.81426, -105.913), Vector2(31.9637, -123.148)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Renderer/Puppet/L_leg:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.777099, -0.485849, 0.0289104, -0.777099]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Renderer/Puppet/Corps:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.80306, -209.321), Vector2(-6.81426, -170.543), Vector2(-6.81426, -161.926), Vector2(1.80306, -209.321)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Renderer/Puppet/Corps:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.00728466, 0.129941, 0.0683237, -0.00728466]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Renderer/Puppet/Corps/Chapeau:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.30866, -133.568), Vector2(4.30866, -138.979), Vector2(8.61732, -110.956), Vector2(4.30866, -133.568)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Renderer/Puppet/Corps/Chapeau:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, 15), Vector2(-5, 15)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Renderer/Puppet/Corps/Chapeau/Chapeau_arriere:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Renderer/Puppet/Corps/Lunette:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1.25989, -84.3465), Vector2(-1.25989, -84.3465)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Renderer/Puppet/Corps/Lunette:rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Renderer/Puppet/Corps/Tete:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-6.25987, -54.3465), Vector2(-6.25987, -54.3465)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Renderer/Puppet/Corps/Tete:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Renderer/Puppet/Corps/L_arm:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-15.7035, -5.12523), Vector2(-15.7035, -5.12523), Vector2(-17.2346, -20.4743), Vector2(-15.7035, -5.12523)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Renderer/Puppet/Corps/L_arm:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [-0.0563348, -0.346995, 0.239734, -0.0563348]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Renderer/Puppet/Corps/R_arm:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-50, -10), Vector2(-50, -10), Vector2(-51.7039, -7.54829), Vector2(-50, -10)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Renderer/Puppet/Corps/R_arm:rotation")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.25, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.296513, 0.588137, -0.0399583, 0.296513]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Renderer/Puppet/R_leg:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-75.7529, -118.839), Vector2(-40.4884, -113.011), Vector2(-49.9009, -101.605), Vector2(-75.7529, -118.839)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Renderer/Puppet/R_leg:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.554659, 0.516807, -6.05881e-05, 0.554659]
+}
+
+[sub_resource type="Animation" id="Animation_lkqba"]
+resource_name = "spell"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Renderer/KeyFrames/Spell:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(133.569, -161.42), Vector2(-38.778, -182.964), Vector2(-30.1606, -131.26), Vector2(-30.1606, -131.26), Vector2(-30.1606, -131.26), Vector2(-30.1606, -131.26)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Renderer/KeyFrames/Spell:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Renderer/KeyFrames/Spell:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.957319, 1.14656), Vector2(1.16747, 0.839925), Vector2(0.686432, 1.40221), Vector2(1.36163, 0.698798), Vector2(0.86597, 0.828838), Vector2(0.956057, 1.11973)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y7rvh"]
+_data = {
+"RESET": SubResource("Animation_vh0qe"),
+"idle": SubResource("Animation_xglro"),
+"run": SubResource("Animation_ew6sx"),
+"spell": SubResource("Animation_lkqba")
+}
+
+[node name="Rig2D" type="Node2D"]
+script = ExtResource("1_6d24m")
+
+[node name="Renderer" type="CanvasGroup" parent="."]
+position = Vector2(1, 17)
+scale = Vector2(0.232091, 0.232091)
+
+[node name="KeyFrames" type="Node2D" parent="Renderer"]
+position = Vector2(0, 2)
+
+[node name="Spell" type="Polygon2D" parent="Renderer/KeyFrames"]
+position = Vector2(-4.30865, -105.408)
+scale = Vector2(1.11921, 0.915112)
+offset = Vector2(-247, -301)
+texture = ExtResource("2_0s16f")
+polygon = PackedVector2Array(10, 4, 421, 13, 400, 490, 19, 490)
+uv = PackedVector2Array(10, 4, 421, 13, 400, 490, 19, 490)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("2_0s16f")
+img_b = ExtResource("4_u04lm")
+img_c = ExtResource("5_6gilv")
+
+[node name="arm" type="AnimatedSprite2D" parent="Renderer/KeyFrames/Spell"]
+z_index = 3
+position = Vector2(32.1295, -61.1261)
+sprite_frames = SubResource("SpriteFrames_v5qko")
+autoplay = "default"
+frame = 2
+frame_progress = 0.607655
+
+[node name="RecolteA" type="Polygon2D" parent="Renderer/KeyFrames"]
+visible = false
+position = Vector2(-25.852, -135.569)
+scale = Vector2(1.00765, 1.20733)
+offset = Vector2(-247, -301)
+texture = ExtResource("7_ge13x")
+polygon = PackedVector2Array(7, 63, 4, 454, 509, 464, 511, 41)
+uv = PackedVector2Array(7, 63, 4, 454, 509, 464, 511, 41)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("8_626ag")
+img_b = ExtResource("9_scgrn")
+img_c = ExtResource("10_mj5vh")
+
+[node name="RecolteB" type="Polygon2D" parent="Renderer/KeyFrames"]
+visible = false
+position = Vector2(-47.3953, -118.334)
+scale = Vector2(1.18204, 1.17613)
+offset = Vector2(-247, -301)
+texture = ExtResource("11_vwkoj")
+polygon = PackedVector2Array(107.921, -43.5644, 434.653, -20.7921, 400.99, 431.683, 156.436, 437.624)
+uv = PackedVector2Array(107.921, -43.5644, 434.653, -20.7921, 400.99, 431.683, 156.436, 437.624)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("12_rcnac")
+img_b = ExtResource("13_q8lvh")
+img_c = ExtResource("11_vwkoj")
+
+[node name="Gotveg" type="Polygon2D" parent="Renderer/KeyFrames"]
+visible = false
+position = Vector2(-60.3213, -139.877)
+scale = Vector2(1.37797, 1.2982)
+offset = Vector2(-247, -301)
+texture = ExtResource("14_0ord4")
+polygon = PackedVector2Array(147.525, -4.9505, 482.178, -4.9505, 465.347, 446.535, 157.426, 436.634)
+uv = PackedVector2Array(147.525, -4.9505, 482.178, -4.9505, 465.347, 446.535, 157.426, 436.634)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("15_rmxhi")
+img_b = ExtResource("16_rdugn")
+img_c = ExtResource("17_n5glp")
+
+[node name="Puppet" type="Node2D" parent="Renderer"]
+visible = false
+position = Vector2(2.5056, 2.5056)
+metadata/_edit_lock_ = true
+
+[node name="Corps" type="Polygon2D" parent="Renderer/Puppet"]
+position = Vector2(-4.03674, -182.653)
+offset = Vector2(-251, -255)
+texture = ExtResource("1_ben1y")
+polygon = PackedVector2Array(123, 167, 119, 401, 360, 406, 363, 164)
+uv = PackedVector2Array(123, 167, 119, 401, 360, 406, 363, 164)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("3_o3nbw")
+img_b = ExtResource("4_fd0la")
+img_c = ExtResource("1_ben1y")
+
+[node name="Chapeau" type="Polygon2D" parent="Renderer/Puppet/Corps"]
+z_index = 4
+position = Vector2(4.30866, -110)
+offset = Vector2(-269, -135)
+texture = ExtResource("4_20stl")
+polygon = PackedVector2Array(174, 25, 44, 188, 165, 208, 396, 130, 453, 79)
+uv = PackedVector2Array(174, 25, 44, 188, 165, 208, 396, 130, 453, 79)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("2_dkmgn")
+img_b = ExtResource("3_8rbn8")
+img_c = ExtResource("4_20stl")
+
+[node name="Chapeau_arriere" type="Polygon2D" parent="Renderer/Puppet/Corps/Chapeau"]
+z_index = -5
+position = Vector2(-5, 15)
+offset = Vector2(-263, -150)
+texture = ExtResource("5_xxu88")
+polygon = PackedVector2Array(174, 25, 44, 188, 165, 208, 396, 130, 453, 79)
+uv = PackedVector2Array(174, 25, 44, 188, 165, 208, 396, 130, 453, 79)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("6_gqpqq")
+img_b = ExtResource("7_sgpjr")
+img_c = ExtResource("5_xxu88")
+
+[node name="Lunette" type="Polygon2D" parent="Renderer/Puppet/Corps"]
+z_index = 2
+position = Vector2(0, -84)
+offset = Vector2(-265, -165)
+texture = ExtResource("8_slr2x")
+polygon = PackedVector2Array(389, 121, 201, 125, 187, 191, 395, 208)
+uv = PackedVector2Array(389, 121, 201, 125, 187, 191, 395, 208)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("9_km182")
+img_b = ExtResource("10_w7jqc")
+img_c = ExtResource("8_slr2x")
+
+[node name="Tete" type="Polygon2D" parent="Renderer/Puppet/Corps"]
+z_index = 1
+position = Vector2(-5, -54)
+offset = Vector2(-260, -195)
+texture = ExtResource("11_0ewg8")
+polygon = PackedVector2Array(138, 95, 137, 259, 396, 256, 404, 77)
+uv = PackedVector2Array(138, 95, 137, 259, 396, 256, 404, 77)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("12_54tuy")
+img_b = ExtResource("13_wgiya")
+img_c = ExtResource("11_0ewg8")
+
+[node name="L_arm" type="Polygon2D" parent="Renderer/Puppet/Corps"]
+z_index = -2
+position = Vector2(6, -34)
+offset = Vector2(-278, -240)
+texture = ExtResource("17_2rvtf")
+polygon = PackedVector2Array(270, 211, 274, 276, 435, 322, 462, 246)
+uv = PackedVector2Array(270, 211, 274, 276, 435, 322, 462, 246)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("6_gqpqq")
+img_b = ExtResource("7_sgpjr")
+img_c = ExtResource("17_2rvtf")
+
+[node name="R_arm" type="Polygon2D" parent="Renderer/Puppet/Corps"]
+z_index = 2
+position = Vector2(-50, -10)
+offset = Vector2(-204, -247)
+texture = ExtResource("17_2rvtf")
+polygon = PackedVector2Array(47, 211, 48, 341, 128, 350, 268, 313, 246, 226)
+uv = PackedVector2Array(47, 211, 48, 341, 128, 350, 268, 313, 246, 226)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("6_gqpqq")
+img_b = ExtResource("7_sgpjr")
+img_c = ExtResource("17_2rvtf")
+
+[node name="R_leg" type="Polygon2D" parent="Renderer/Puppet"]
+z_index = -2
+position = Vector2(-67.0368, -100.653)
+offset = Vector2(-185, -341)
+texture = ExtResource("17_2rvtf")
+polygon = PackedVector2Array(206, 334, 163, 333, 124, 456, 231, 462, 231, 353)
+uv = PackedVector2Array(206, 334, 163, 333, 124, 456, 231, 462, 231, 353)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("6_gqpqq")
+img_b = ExtResource("7_sgpjr")
+img_c = ExtResource("17_2rvtf")
+
+[node name="L_leg" type="Polygon2D" parent="Renderer/Puppet"]
+z_index = -3
+position = Vector2(7.96326, -101.653)
+offset = Vector2(-282, -340)
+texture = ExtResource("17_2rvtf")
+polygon = PackedVector2Array(292, 315, 254, 352, 266, 473, 404, 464, 331, 326)
+uv = PackedVector2Array(292, 315, 254, 352, 266, 473, 404, 464, 331, 326)
+script = ExtResource("1_wdgqh")
+img_a = ExtResource("6_gqpqq")
+img_b = ExtResource("7_sgpjr")
+img_c = ExtResource("17_2rvtf")
+
+[node name="Anim" type="AnimationPlayer" parent="Renderer"]
+root_node = NodePath("../..")
+speed_scale = 1.5
+libraries = {
+"": SubResource("AnimationLibrary_y7rvh")
+}
+
+[node name="FX_2D" parent="." instance=ExtResource("36_xmfdr")]

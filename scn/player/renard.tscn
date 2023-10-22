@@ -1,0 +1,72 @@
+[gd_scene load_steps=15 format=3 uid="uid://dr8q5lutvc20"]
+
+[ext_resource type="PackedScene" uid="uid://g1lu8kmfx76g" path="res://scn/player/player.tscn" id="1_x4gae"]
+[ext_resource type="PackedScene" uid="uid://c06sqgniakv1q" path="res://scn/player/RenardRig.tscn" id="2_gkn4u"]
+[ext_resource type="Script" path="res://scn/player/IA.gd" id="2_inppg"]
+[ext_resource type="Script" path="res://Audio/audio_effect.gd" id="4_e62ry"]
+[ext_resource type="AudioStream" uid="uid://bb4catgt6yqls" path="res://Audio/bruitGWJ23_renard_v_r1_session.wav" id="5_odwti"]
+[ext_resource type="AudioStream" uid="uid://b7dl30f77cjna" path="res://Audio/bruitGWJ23_renard_v_r2_session.wav" id="6_aupwu"]
+[ext_resource type="AudioStream" uid="uid://bu483nnmcsfob" path="res://Audio/bruitGWJ23_renard_v_r3_session.wav" id="7_kwi6f"]
+[ext_resource type="AudioStream" uid="uid://cbkcpheec8is4" path="res://Audio/bruitGWJ23_v2_huùan_harves_r1_session.wav" id="8_ui5aa"]
+[ext_resource type="AudioStream" uid="uid://do8kp23wsmbeu" path="res://Audio/bruitGWJ23_v2_huùan_harves_r4_session.wav" id="9_irbt0"]
+[ext_resource type="AudioStream" uid="uid://dbtm1h7dca142" path="res://Audio/bruitGWJ23_renard_h_r1_session.wav" id="10_nvo2c"]
+[ext_resource type="AudioStream" uid="uid://2hw70knvx3ql" path="res://Audio/bruitGWJ23_renard_h_r2_session.wav" id="11_d0x3w"]
+[ext_resource type="AudioStream" uid="uid://b7xk46i64keiu" path="res://Audio/bruitGWJ23_renard_h_r3_session.wav" id="12_805db"]
+[ext_resource type="AudioStream" uid="uid://v8nhljpjq8ux" path="res://Audio/bruitGWJ23_renard_h_r4_session.wav" id="13_1w311"]
+[ext_resource type="AudioStream" uid="uid://ylek1s4xxkf6" path="res://Audio/bruitGWJ23_renard_loopwalk_session.wav" id="14_42gth"]
+
+[node name="player" groups=["cpu"] instance=ExtResource("1_x4gae")]
+
+[node name="Rig2D" parent="." index="0" node_paths=PackedStringArray("state", "looker") instance=ExtResource("2_gkn4u")]
+state = NodePath("../PlayerState")
+looker = NodePath("../LookAt")
+
+[node name="InputHandler" parent="." index="2"]
+inputProvider = 3
+
+[node name="PlayerState" parent="." index="3"]
+cooldown_gotveg = 2.0
+speed = 170.0
+
+[node name="IA" type="Node" parent="." index="5"]
+script = ExtResource("2_inppg")
+
+[node name="thinktic" type="Timer" parent="IA" index="0"]
+autostart = true
+
+[node name="Voice" type="AudioStreamPlayer" parent="." index="8"]
+volume_db = -9.074
+bus = &"SFX"
+script = ExtResource("4_e62ry")
+audio_clips = Array[AudioStream]([ExtResource("5_odwti"), ExtResource("6_aupwu"), ExtResource("7_kwi6f")])
+pitch_distortion = 0.145
+
+[node name="havest" type="AudioStreamPlayer" parent="." index="9"]
+volume_db = -7.678
+pitch_scale = 1.27
+bus = &"SFX"
+script = ExtResource("4_e62ry")
+audio_clips = Array[AudioStream]([ExtResource("8_ui5aa"), ExtResource("9_irbt0")])
+pitch_distortion = 0.4
+
+[node name="hurted" type="AudioStreamPlayer" parent="." index="10"]
+volume_db = -2.792
+bus = &"SFX"
+script = ExtResource("4_e62ry")
+audio_clips = Array[AudioStream]([ExtResource("10_nvo2c"), ExtResource("11_d0x3w"), ExtResource("12_805db"), ExtResource("13_1w311")])
+pitch_distortion = 0.1
+
+[node name="walkloop" type="AudioStreamPlayer" parent="." index="11"]
+volume_db = -9.074
+bus = &"SFX"
+script = ExtResource("4_e62ry")
+audio_clips = Array[AudioStream]([ExtResource("14_42gth")])
+looping = true
+
+[connection signal="receive_impulse" from="." to="hurted" method="play_sound"]
+[connection signal="start_gotveg" from="PlayerState" to="Voice" method="play_sound"]
+[connection signal="start_harvest" from="PlayerState" to="Voice" method="play_sound"]
+[connection signal="start_harvest" from="PlayerState" to="havest" method="play_sound"]
+[connection signal="start_moving" from="PlayerState" to="walkloop" method="play_sound"]
+[connection signal="stop_moving" from="PlayerState" to="walkloop" method="stop_play"]
+[connection signal="timeout" from="IA/thinktic" to="IA" method="_on_thinktic_timeout"]

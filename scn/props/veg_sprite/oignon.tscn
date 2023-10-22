@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxqfuks2qdng7"]
+
+[ext_resource type="PackedScene" uid="uid://c2p78qg2tt00p" path="res://scn/props/veg_sprite/carotte.tscn" id="1_22317"]
+
+[node name="carotte" instance=ExtResource("1_22317")]
+
+[node name="FakeFixPoly" parent="." index="0"]
+position = Vector2(0, -13)
+polygon = PackedVector2Array(34, 7, 87, 4, 87, 164, 39, 163)
+uv = PackedVector2Array(92, 6, 145, 3, 145, 163, 97, 162)

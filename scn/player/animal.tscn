@@ -1,0 +1,72 @@
+[gd_scene load_steps=18 format=3 uid="uid://cdba8rf4k4hgm"]
+
+[ext_resource type="PackedScene" uid="uid://g1lu8kmfx76g" path="res://scn/player/player.tscn" id="1_vopeq"]
+[ext_resource type="Script" path="res://scn/player/IA.gd" id="2_n1vtw"]
+[ext_resource type="PackedScene" uid="uid://bu31eh12y4k5r" path="res://scn/player/rigSklt.tscn" id="3_l46fk"]
+[ext_resource type="Script" path="res://Audio/audio_effect.gd" id="4_l8v4n"]
+[ext_resource type="AudioStream" uid="uid://bmi7jnpiqtnor" path="res://Audio/bruitGWJ23_skltv_harvest_r1_session.wav" id="5_a5kf7"]
+[ext_resource type="AudioStream" uid="uid://d0qow3ap7ykch" path="res://Audio/bruitGWJ23_skltv_loopalk_session.wav" id="5_cp0we"]
+[ext_resource type="AudioStream" uid="uid://bnowrlaorl41t" path="res://Audio/bruitGWJ23_skltv_v_r1_session.wav" id="5_x858h"]
+[ext_resource type="AudioStream" uid="uid://b8m2fc6pk1eae" path="res://Audio/bruitGWJ23_skltv_h_r1_session.wav" id="5_ytjki"]
+[ext_resource type="AudioStream" uid="uid://c4n444fy01n1r" path="res://Audio/bruitGWJ23_skltv_v_r2_session.wav" id="6_2ye48"]
+[ext_resource type="AudioStream" uid="uid://chpueqfeopfje" path="res://Audio/bruitGWJ23_skltv_harvest_r2_session.wav" id="6_370qn"]
+[ext_resource type="AudioStream" uid="uid://dcoe6avphehwo" path="res://Audio/bruitGWJ23_skltv_h_r2_session.wav" id="6_mgebk"]
+[ext_resource type="AudioStream" uid="uid://sodbqljrtvgr" path="res://Audio/bruitGWJ23_skltv_h_r3_session.wav" id="7_2ueun"]
+[ext_resource type="AudioStream" uid="uid://1uemecb2qudp" path="res://Audio/bruitGWJ23_skltv_harvest_r3_session.wav" id="7_iku26"]
+[ext_resource type="AudioStream" uid="uid://vy3jkdty2aca" path="res://Audio/bruitGWJ23_skltv_v_r3_session.wav" id="7_mpmrc"]
+[ext_resource type="AudioStream" uid="uid://6nicchgfhk8e" path="res://Audio/bruitGWJ23_skltv_harvest_r4_session.wav" id="8_2vvex"]
+[ext_resource type="AudioStream" uid="uid://f5icu22amiow" path="res://Audio/bruitGWJ23_skltv_h_r4_session.wav" id="8_kniw4"]
+[ext_resource type="AudioStream" uid="uid://d2jvlet12q335" path="res://Audio/bruitGWJ23_skltv_h_r5_session.wav" id="9_ieo3i"]
+
+[node name="player" groups=["cpu"] instance=ExtResource("1_vopeq")]
+
+[node name="InputHandler" parent="." index="1"]
+inputProvider = 3
+
+[node name="PlayerState" parent="." index="2"]
+cooldown_gotveg = 2.0
+speed = 100.0
+
+[node name="IA" type="Node" parent="." index="4"]
+script = ExtResource("2_n1vtw")
+
+[node name="thinktic" type="Timer" parent="IA" index="0"]
+autostart = true
+
+[node name="Rig2D2" parent="." index="6" node_paths=PackedStringArray("state", "looker") instance=ExtResource("3_l46fk")]
+state = NodePath("../PlayerState")
+looker = NodePath("../LookAt")
+
+[node name="Voice" type="AudioStreamPlayer" parent="." index="8"]
+bus = &"SFX"
+script = ExtResource("4_l8v4n")
+audio_clips = Array[AudioStream]([ExtResource("5_x858h"), ExtResource("6_2ye48"), ExtResource("7_mpmrc")])
+pitch_distortion = 0.14
+
+[node name="Harvest" type="AudioStreamPlayer" parent="." index="9"]
+bus = &"SFX"
+script = ExtResource("4_l8v4n")
+audio_clips = Array[AudioStream]([ExtResource("5_a5kf7"), ExtResource("6_370qn"), ExtResource("7_iku26"), ExtResource("8_2vvex")])
+pitch_distortion = 0.245
+
+[node name="Hurt" type="AudioStreamPlayer" parent="." index="10"]
+bus = &"SFX"
+script = ExtResource("4_l8v4n")
+audio_clips = Array[AudioStream]([ExtResource("5_ytjki"), ExtResource("6_mgebk"), ExtResource("7_2ueun"), ExtResource("8_kniw4"), ExtResource("9_ieo3i")])
+
+[node name="walk" type="AudioStreamPlayer" parent="." index="11"]
+volume_db = -10.47
+bus = &"SFX"
+script = ExtResource("4_l8v4n")
+audio_clips = Array[AudioStream]([ExtResource("5_cp0we")])
+looping = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." index="12"]
+
+[connection signal="receive_impulse" from="." to="Hurt" method="play_sound"]
+[connection signal="start_gotveg" from="PlayerState" to="Voice" method="play_sound"]
+[connection signal="start_harvest" from="PlayerState" to="Harvest" method="play_sound"]
+[connection signal="start_moving" from="PlayerState" to="walk" method="play_sound"]
+[connection signal="stop_moving" from="PlayerState" to="walk" method="stop_play"]
+[connection signal="timeout" from="IA/thinktic" to="IA" method="_on_thinktic_timeout"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="walk" method="set_volume" binds= [-5.0]]

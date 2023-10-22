@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://ba1pqgwilj6fy"]
+
+[ext_resource type="Script" path="res://scn/player/CharacterMovement.gd" id="1_fcf3w"]
+[ext_resource type="Texture2D" uid="uid://dubxfknyxinx2" path="res://scn/props/frames/props0002.png" id="2_b6bkj"]
+[ext_resource type="Script" path="res://scn/props/FakeFixPoly.gd" id="3_x2xn8"]
+[ext_resource type="Texture2D" uid="uid://doyxgjpq7470p" path="res://scn/props/frames/props0000.png" id="4_0rdiy"]
+[ext_resource type="Texture2D" uid="uid://c6r1v260hohs7" path="res://scn/props/frames/props0001.png" id="5_7j3c1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffe0h"]
+radius = 25.1794
+
+[node name="Props_bougeable" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_fcf3w")
+should_look = false
+
+[node name="FakeFixPoly" type="Polygon2D" parent="."]
+position = Vector2(1, -1)
+scale = Vector2(0.734261, 0.757096)
+offset = Vector2(-290, -81)
+texture = ExtResource("2_b6bkj")
+polygon = PackedVector2Array(231, 19, 232, 127, 344, 129, 343, 22)
+uv = PackedVector2Array(236, 16, 237, 124, 349, 126, 348, 19)
+script = ExtResource("3_x2xn8")
+img_a = ExtResource("4_0rdiy")
+img_b = ExtResource("5_7j3c1")
+img_c = ExtResource("2_b6bkj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ffe0h")

@@ -1,0 +1,170 @@
+[gd_scene load_steps=9 format=3 uid="uid://btwurp6nbo8dh"]
+
+[ext_resource type="Theme" uid="uid://b8307px7ohiw7" path="res://scn/main_ui_thm.tres" id="1_72c2u"]
+[ext_resource type="Script" path="res://scn/lvl/MenuCtrl.gd" id="2_aafty"]
+[ext_resource type="FontFile" uid="uid://c23igk2a65km5" path="res://scn/Comicy.otf" id="3_ru53v"]
+[ext_resource type="Texture2D" uid="uid://qecwqrk3a40t" path="res://scn/props/UI_end/uimenu0016.png" id="4_agga4"]
+[ext_resource type="Texture2D" uid="uid://b1qfrotlfarbo" path="res://scn/props/UI_end/uimenu0017.png" id="5_0r35h"]
+[ext_resource type="Texture2D" uid="uid://c6jaspypi6ii8" path="res://scn/props/UI_end/uimenu0018.png" id="6_1owtk"]
+[ext_resource type="Texture2D" uid="uid://ufhc6jh7ciyc" path="res://scn/props/UI_end/uimenu0019.png" id="7_c5s03"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mnkd5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_agga4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0r35h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1owtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c5s03")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="menu" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_72c2u")
+script = ExtResource("2_aafty")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 293.0
+offset_right = 1049.0
+offset_bottom = 516.0
+
+[node name="Tuto" type="Panel" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 19.0
+offset_right = 134.0
+offset_bottom = 63.0
+
+[node name="Button" type="Button" parent="Control/Panel/Tuto"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = -5.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Tutorial"
+
+[node name="lvl1" type="Panel" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 141.0
+offset_right = 136.0
+offset_bottom = 185.0
+
+[node name="Button" type="Button" parent="Control/Panel/lvl1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Big Forest"
+
+[node name="lvl2" type="Panel" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 80.0
+offset_right = 144.0
+offset_bottom = 124.0
+
+[node name="Button" type="Button" parent="Control/Panel/lvl2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Little Woods"
+
+[node name="Music" type="VSlider" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 49.0
+offset_right = 276.0
+offset_bottom = 213.0
+value = 100.0
+
+[node name="music" type="Label" parent="Control/Panel/Music"]
+layout_mode = 0
+offset_left = -39.0
+offset_top = -23.0
+offset_right = 22.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "music
+"
+
+[node name="SFX" type="VSlider" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 49.0
+offset_right = 246.0
+offset_bottom = 213.0
+value = 100.0
+
+[node name="Label" type="Label" parent="Control/Panel/SFX"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = -22.0
+offset_right = 70.0
+offset_bottom = 5.0
+theme_override_font_sizes/font_size = 10
+text = "SFX"
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 58.0
+offset_right = 1114.0
+offset_bottom = 110.0
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("3_ru53v")
+theme_override_font_sizes/font_size = 50
+text = "Enchanted Woodland Gatherings"
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+z_index = -100
+color = Color(0.784314, 0.647059, 0.564706, 1)
+polygon = PackedVector2Array(-26, -78, 1344, -67, 1299, 692, -104, 720)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(411, 347)
+scale = Vector2(0.508592, 0.508592)
+sprite_frames = SubResource("SpriteFrames_mnkd5")
+
+[connection signal="pressed" from="Control/Panel/Tuto/Button" to="Control" method="gotoscn" binds= [&"res://scn/lvl/lvltuto.tscn"]]
+[connection signal="pressed" from="Control/Panel/lvl1/Button" to="Control" method="gotoscn" binds= [&"res://scn/lvl/level_test.tscn"]]
+[connection signal="pressed" from="Control/Panel/lvl2/Button" to="Control" method="gotoscn" binds= [&"res://scn/lvl/levelsimple.tscn"]]
+[connection signal="value_changed" from="Control/Panel/Music" to="Control" method="_on_music_value_changed"]
+[connection signal="value_changed" from="Control/Panel/SFX" to="Control" method="_on_sfx_value_changed"]

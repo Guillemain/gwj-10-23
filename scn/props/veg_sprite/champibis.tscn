@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctaieenf15t3u"]
+
+[ext_resource type="PackedScene" uid="uid://cq5btkjyrb20e" path="res://scn/props/veg_sprite/champi.tscn" id="1_y5v1l"]
+
+[node name="carotte" instance=ExtResource("1_y5v1l")]
+
+[node name="FakeFixPoly" parent="." index="0"]
+uv = PackedVector2Array(94.3075, 164.331, 157.786, 161.61, 161.413, 229.623, 92.4938, 231.436)
